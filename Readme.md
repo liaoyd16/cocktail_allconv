@@ -111,11 +111,16 @@ Go to file `scripts/barplot.py` and uncomment `figure4,5` part. Edit `cumu_singl
 
 ###### Figure 6
 - convert `.json` files to `.mat` files
+Edit code in `fig6-code/json2mat.py`:
+  - change `json_name_template`: create a list containing i) directory location of `results/dumped/`, plus ii) `'n={}_en={}_resblock_3x3conv_5shortcut'`, `'de={}'` and `'condition_{}-tpdwn_{}_spec_ami.json'`, then join them with `os.sep`.
+  - change `mat_place`: create a list containing i) directory to place `.mat` files, plus ii) `'condition_{}-tpdwn'`,`'n={}'`,`'en={}_de={}.mat'`, then join them with `os.sep`.
+Run code: `python json2mat.py [cumu/single] [4/6/9] [1/2/3] [0/en]`. Run all combinations manually.
 
-
-- cumulative projection
-
-- single layer projection
+- run figure plotting
+  - open matlab
+  - load script `sigmoid_fit.m` in matlab
+  - run script `plot_curves.m` line by line in matlab. Change directory names used by `load()` function in `plot_curves.m` to file names of the previous step.
+  - run script `print_to_png.m` line by line: first open figure and name the variable name `fig`, then be sure to change figure name at the last line.
 
 
 #### Required libraries
