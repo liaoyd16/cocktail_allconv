@@ -109,7 +109,7 @@ To run this part, first run `scripts/multifunction_dump.py`. Be sure to first se
 
 Go to file `scripts/barplot.py` and uncomment `figure4,5` part. Edit `cumu_single` to `'single'`. Then switch to `scripts/` and run `python barplot.py`. This will give you `results/figures/figure5/barplot_1x_single.png` and `results/figures/figure5/barplot_2x_single.png`.
 
-###### Figure 6
+##### Figure 6
 - convert `.json` files to `.mat` files
 Edit code in `fig6-code/json2mat.py`:
   - change `json_name_template`: create a list containing i) directory location of `results/dumped/`, plus ii) `'n={}_en={}_resblock_3x3conv_5shortcut'`, `'de={}'` and `'condition_{}-tpdwn_{}_spec_ami.json'`, then join them with `os.sep`.
