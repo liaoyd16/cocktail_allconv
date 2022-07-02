@@ -1,2 +1,2 @@
 Cloud Studies
-Preface chapter1 chapter2 chapter3 chapter4
+sections: 00 01 02 03 04

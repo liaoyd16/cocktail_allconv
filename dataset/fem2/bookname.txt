@@ -1,2 +1,2 @@
 Discourses: Biological and Geological
-Preface chapter1 chapter2 chapter3
+sections: 00 01 02 03
